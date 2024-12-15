@@ -1,0 +1,53 @@
+# Stone paper scieser game
+
+from random import choice
+from time import sleep
+import os
+os.system('cls')
+print('-------Welcome-------')
+while True:
+    print('1. Stone')
+    print('2. Paper')
+    print('3. Scissors')
+    user_input=int(input('Enter Your Choice:'))
+    game=choice(['Stone','Paper','Sciesor'])
+    if user_input==1:
+        print('You chose Stone')
+    elif user_input==2:
+        print('You chose Paper')
+    elif user_input==3:
+        print('You chose Sciesor')
+    else:
+        print('Invalid Input')
+    print('Your Opponent Chossed:',game)
+    sleep(2)
+    if user_input==1:
+        if game=='Stone':
+            print('It is a tie')
+        elif game=='Paper':
+            print('You Lost')
+        else:
+            print('You Won')
+    elif user_input==2:
+        if game=='Paper':
+            print('It is a tie')
+        elif game=='Stone':
+            print('You Won')
+        else:
+            print('You Lost')
+    elif user_input==3:
+        if game=='Sciesor':
+            print('It is a tie')
+        elif game=='Stone':
+            print('You Lost')
+        else:
+            print('You Won')
+    print('Do you want to play again:')
+    print('1. YES')
+    print('2. NO')
+    play_again=int(input('Enter your Choice To Play Again:'))
+    sleep(2)
+    if play_again==1:
+        continue
+    else:
+        break

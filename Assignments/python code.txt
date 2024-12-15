@@ -1,0 +1,10 @@
+# first char have been changed to '$',except the first char itself.
+a = "restart"
+r=input("please enter alphabht to replace: ")
+index = a.rfind(r)
+
+if index != -1:
+    b = a[:index] + '$' + a[index + 1:]
+else:
+    b= a
+print(b)

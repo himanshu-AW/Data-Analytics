@@ -7,4 +7,4 @@ def rem_nth_idx(str,newStr,n):
         return str[:n]+newStr+str[n+1:]
 
 n = 3
-print(rem_nth_idx(str, "G", n)) 
+print(rem_nth_idx("this is a string", "none-empty-string", n)) 

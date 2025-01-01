@@ -1,7 +1,7 @@
 # NUmpy is a library for the python programming lanugage, adding support for large files, multi-dimentional array and matrix along with a large collection of hingh level mathematics function to operate on these array.
 
 # lists is the collection of values that holdes different types. We can perform crud operation. we generally use for data science.
-# NUmmpy is a library for the python programming lanugage
+# Numpy is a library for the python programming lanugage
 # Calculation over entire array. easy and Fast. Installation require. Take less storeage
 
 import numpy as np

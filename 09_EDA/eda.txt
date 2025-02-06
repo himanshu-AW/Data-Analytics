@@ -1,0 +1,66 @@
+Link: https://thecleverprogrammer.com/2025/01/27/exploratory-data-analysis-using-sql/#:~:text=Data%20Scientists%20use%20SQL%20for%20Exploratory%20Data%20Analysis,especially%20in%20relational%20databases%20like%20MySQL%20or%20PostgreSQL.
+
+
+
+****Life Cycle of Data Science****
+1.Data Integration >>> 2.Data Collection(EDA) >>> 3.Data Analysis >>> 4.Data Modeling >>> 5.Data Visualization(finding solution) >>> 6.Evaluation/Reporting
+
+
+>>>**Statistics** is the branch of mathematics that deals with collecting, organizing, analyzing, interpreting, and presenting data. 
+>>> It helps in identifying patterns, making, predictions, and drawing conclusions based on data.
+
+**Importance of statistic in Data Analysis**
+
+Summarization data, Identify trends and patterns, Make data Driven Decisions, Predict Feature Outcomes, Hypothesis Testing, etc
+
+
+
+
+
+
+2. EDA:- based on the given feature we are going to perform analysis process.
+--Eda is of 3 types-- Data Profiling ,Statistic analysis and Graph-based Analysis
+-- Scaling of data, feature selection encoding, transformation, handling of missing values,hnadling of outlier.
+
+
+mito spreed sheet, Knine.
+
+
+*Data Profiling*-
+*Statistic Analysis*-Daviation,mean,medain,mode T-test,Z-test,Square-test, Enova.
+*Graph based analysis*-Histrogram, boxplot,matplotcatter, seaborn,scatter,bargraph ,KDE.
+
+
+------------- Note : Each graph have uniqueness-------------
+boxplot- to find outlier.
+count bar - to check how many rows and cols.
+heatmap- we can check co-relation.
+histogram- used to summarize discrete data.
+scatterplot - to check the outlier of data or we can check uniform/liner data.
+
+>> Processing:-
+-- Data Cleaning
+-- Data Wrangling
+-- Data preparation
+
+
+
+**************************************************
+- selection of algo:choose aappropriate model
+- train the model: feed the training the data to algo and relationship.
+- obseration- tocheck the insights and learn params.
+
+***Evaluation and validate***
+-- To access the performance to check the generaliality to train the model.
+>> split data: divide the data into training and testing sets.
+>> evaluate: test the train the model on unseen data and calculate  preformation matrix.
+>> validate: fine tune the model on the evaluation results to improve performance.
+
+
+Missing value handling:- this is a method to handles missing values.
+>> fill random values,
+>> forward filling and backward filling.
+>> Statistical approach (mean,medain,mode)
+>> END of distribution.
+>> Drop the low values.
+>> 

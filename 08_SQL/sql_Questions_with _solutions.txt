@@ -1,0 +1,68 @@
+SELECT product_id FROM Products WHERE low_fat = 'Y' AND recyclable = 'Y';
+
+SELECT name FROM Customer WHERE referee_id IS NULL or referee_id <> 2;
+
+
+Link: https://www.analyticsvidhya.com/blog/2025/01/sql-query-interview-questions/
+
+Q1. Write a query to display all records from the Employees table.
+Select * from Employees;
+Q2. Fetch only the FirstName and LastName of employees.
+select FirstName,LastName from Employees;
+Q3. Retrieve the unique department IDs from the Employees table.
+select distinct departmentId from Employees;
+Q4. Fetch employees with a salary greater than 60,000.
+SELECT * from Employees where salary > 60000;
+Q5. Write a query to display all orders placed on or after January 17, 2022.
+Select * from Orders WHERE OrderDate >= '2022-01-17';
+Q6. Retrieve all products with a price less than 300.
+Select * from Products where price < 300;
+Q7. Find the total number of orders in the Orders table.
+select count(OrderID) as Total_No_Orders from Orders;
+Q8. Fetch the details of the product named ‘Laptop’.
+SELECT * FROM Products WHERE ProductName = "Laptop";
+Q9. Write a query to sort employees by their HireDate in ascending order.
+Select * from Employees ORDER BY HireDate;
+Q10. Retrieve the maximum price of products in the Electronics category.
+Select max(price) from Products where Category = "Electronics";
+
+
+Q11. Write a query to join Employees and Orders tables to fetch employee names along with their orders.
+Select FirstName, LastName, OrderID, OrderDate from Employees
+JOIN Orders ON Employees.EmployeeID = Orders.EmployeeID;
+
+Q12. Calculate the total salary by department.
+Select DepartmentID, sum(salary) AS TotalSalary FROM Employees Group BY DepartmentID;
+
+Q13. Find the employees who do not have a Manager.
+Select * FROM Employees Where ManagerID IS NULL;
+or 
+Select * FROM Employees WHERE ManagerID <> (SELECT ManagerID FROM Employees WHERE ManagerID IS NOT NULL);
+or 
+Select * Form Employees AS E1 
+JOIN Employees E2 ON E1.EmployeesID = E2.EmployeeID
+WHERE E1.ManagerID IS NULL;
+
+Q14.Write a query to display the average product price for each category.
+select Category, AVG(price) AS AveragePrice FROM Products GROUP BY category;
+
+Q15. Fetch the details of the top 3 highest-paid employees.
+Select * from Employees Order By Salary DESC Limit 3;
+
+Q16. Retrieve the order details along with the product name.
+Select OrderID, OrderDate, Quantity, ProductName From Orders
+JOIN Products ON Orders.ProductID = Products.ProductID;
+
+Q17. Find the total quantity of products ordered for each product.
+Select ProductID, SUM(Quantity) AS TotalQuantity from Orders
+Group BY ProductsID;
+
+Q18. Write a query to update the price of all Furniture category products by 10%.
+Update Products 
+SET Price = Price*1.10
+WHERE Category = 'Furniture';
+
+Q19. Delete all orders placed before January 17, 2022.
+Delete From Orders Where OrderDate < '2022-01-17';
+
+Q20. Fetch employees whose first name starts with ‘A’.
